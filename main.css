@@ -1,3 +1,8 @@
+:root {
+  --color-1: #be0622;
+  --color-2: #0285c2;
+}
+
 body {
   background: #020617;
   color: #f8fafc;
@@ -35,5 +40,58 @@ a {
   }
   100% {
     visibility: visible;
+  }
+}
+
+main {
+  position: relative;
+  margin: 1em;
+}
+
+pre {
+  margin: 0;
+  position: relative;
+}
+
+.glitch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+
+  text-shadow: var(--rx) var(--ry) 4px var(--color-1), var(--bx) var(--by) 4px var(--color-2);
+  animation: glitch 4.1s step-start infinite 0.9s alternate-reverse;
+}
+
+@keyframes glitch {
+  0%, 10% {
+    opacity: 0;
+  }
+  11%, 14% {
+    opacity: var(--a);
+    transform: translate(var(--x), var(--y));
+  }
+  15%, 40% {
+    opacity: 0;
+  }
+  41%, 45% {
+    opacity: var(--a);
+  }
+  46%, 54% {
+    opacity: 0;
+  }
+  55% {
+    opacity: var(--a);
+  }
+  88% {
+    opacity: var(--a);
+    transform: translate(var(--x), var(--y));
+  }
+  89%, 90% {
+    opacity: var(--a);
+    transform: translate(var(--y), var(--x));
+  }
+  91%, 100% {
+    opacity: 0;
   }
 }
