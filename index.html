@@ -9,48 +9,50 @@
   <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
+  <header>
+    <h1 class="glitch" data-value="Rob Harper">Rob Harper</h1>
+  </header>
   <main>
-    <pre class="glitch">
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/robertharper">linkedin.com/in/robertharper</a></p>
+    <p><strong>GitHub:</strong> <a href="https://www.github.com/robharper">github.com/robharper</a></p>
 
-  ██████╗  ██████╗ ██████╗     ██╗  ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗
-  ██╔══██╗██╔═══██╗██╔══██╗    ██║  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
-  ██████╔╝██║   ██║██████╔╝    ███████║███████║██████╔╝██████╔╝█████╗  ██████╔╝
-  ██╔══██╗██║   ██║██╔══██╗    ██╔══██║██╔══██║██╔══██╗██╔═══╝ ██╔══╝  ██╔══██╗
-  ██║  ██║╚██████╔╝██████╔╝    ██║  ██║██║  ██║██║  ██║██║     ███████╗██║  ██║
-  ╚═╝  ╚═╝ ╚═════╝ ╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
-    </pre>
-    <pre>
-┌────────────────────────────────────────────────────────────────────────────────┐
-│ ██████╗  ██████╗ ██████╗     ██╗  ██╗ █████╗ ██████╗ ██████╗ ███████╗██████╗   │
-│ ██╔══██╗██╔═══██╗██╔══██╗    ██║  ██║██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗  │
-│ ██████╔╝██║   ██║██████╔╝    ███████║███████║██████╔╝██████╔╝█████╗  ██████╔╝  │
-│ ██╔══██╗██║   ██║██╔══██╗    ██╔══██║██╔══██║██╔══██╗██╔═══╝ ██╔══╝  ██╔══██╗  │
-│ ██║  ██║╚██████╔╝██████╔╝    ██║  ██║██║  ██║██║  ██║██║     ███████╗██║  ██║  │
-│ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝  │
-└┬───────────────────────────────────────────────────────────────────────────────┘
- │
- │ Rob Harper
- │ LinkedIn: <a href="https://www.linkedin.com/in/robertharper">linkedin.com/in/robertharper</a>
- │ GitHub: <a href="https://www.github.com/robharper">github.com/robharper</a>
- │ <span class="blink">█</span>
-    </pre>
+    <h3>Some things I built</h3>
+    <ul>
+      <li>My <a href="https://github.com/robharper/guitar-pedal-builds">guitar pedal builds</a>, photos and designs</li>
+      <li>Step-by-step tutorial for building <a href="http://www.robharper.ca/glsl-starfield/">Classic starfield effects</a> in GLSL fragment shaders</li>
+      <li>Basic serverless React app supporting an <a href="https://github.com/robharper/family-console">information console</a> for my family's front hall</li>
+      <li>Canada's Oil Use <a href="https://www.robharper.ca/oil-volume-viz/">static data visualization</a></li>
+      <li>GLSL pixel shader <a href="http://www.robharper.ca/js1k/tunnel.html">tunnel effect</a>, &gt;1k of JS (<a href="https://github.com/robharper/js1k">Code</a>)</li>
+      <li>Visualizing the top <a href="https://www.robharper.ca/xmas-songs-2019/index.html">Christmas songs played in 2019</a> (<a href="https://github.com/robharper/xmas-songs-2019">Code</a>)</li>
+      <li>Super Mario Bros level 1 song <a href="https://www.youtube.com/watch?v=x-HB-7vkRfY">played using stepper motors</a> via Arduino (<a href="https://github.com/robharper/3-stepper-mario">Code</a>)</li>
+      <li>Visualizing the top <a href="https://www.robharper.ca/xmas-songs-2018/">Christmas songs played in 2018</a> (<a href="https://github.com/robharper/xmas-songs-2018">Code</a>)</li>
+      <li>Visualizing the top <a href="https://www.robharper.ca/2390-songs-a-played/">Christmas songs played in 2017</a> (<a href="https://github.com/robharper/2390-songs-a-played">Code</a>)</li>
+      <li>Js1k - Future Crew Second Reality <a href="http://www.robharper.ca/js1k/lens.html">"rotozoom" effect</a> in 1k of Javascript (<a href="https://github.com/robharper/js1k">Code</a>)</li>
+      <li>Js1k - Future Crew Second Reality <a href="http://www.robharper.ca/js1k/hypno.html">"hypno" interference effect</a> in 1k of Javascript (<a href="https://github.com/robharper/js1k">Code</a>)</li>
+      <li><span class="blink">█</span></li>
+    </ul>
   </main>
 
   <script>
     const root = document.body;
-    setInterval(function() {
+    const randomStyle = function() {
       const vars = {
-        '--rx': ((Math.random() + 0.5) * 10) * (Math.random() > 0.5 ? -1 : 1),
-        '--ry': ((Math.random() + 0.5) * 10) * (Math.random() > 0.5 ? -1 : 1),
-        '--x': ((Math.random() + 0.5) * 10) * (Math.random() > 0.5 ? -1 : 1),
-        '--y': ((Math.random() + 0.5) * 10) * (Math.random() > 0.5 ? -1 : 1),
+        '--red': -1 * (Math.random() * 6 + 2) + 'px',
+        '--blue': (Math.random() * 6 + 2) + 'px',
+        '--onex': (Math.pow(Math.random(), 4) * 10 + 1) + 'px',
+        '--oney': (Math.random() * 2) + 'px',
+        '--twox': -1 * (Math.pow(Math.random(), 4) * 10 + 1) + 'px',
+        '--twoy': -1 * (Math.random() * 2) + 'px',
+        '--a': Math.random() * 0.5 + 0.5,
       }
-      vars['--bx'] = -vars['--rx'];
-      vars['--by'] = -vars['--ry'];
       root.style = Object.entries(vars).reduce(function(acc, v) {
-        return acc + v[0] + ':' + v[1] + 'px; ';
-      }, '') + '--a' + (Math.random() > 0.8 ? 0 : 1);
-    }, 790);
+        return acc + v[0] + ':' + v[1] + '; ';
+      }, '')
+
+      setTimeout(randomStyle, Math.random() * 1000 + 200);
+    };
+
+    randomStyle();
   </script>
 </body>
 </html>
