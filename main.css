@@ -94,7 +94,7 @@ ul li {
 .glitch::before {
   left: var(--onex);
   top: var(--oney);
-  text-shadow: var(--red) 0 rgba(201,18,20,var(--a));
+  text-shadow: var(--red) 0 rgba(217,52,43,var(--a));
   animation: glitch-1 4s ease infinite alternate-reverse;
 
 }
@@ -102,7 +102,7 @@ ul li {
 .glitch::after {
   left: var(--twox);
   top: var(--twoy);
-  text-shadow: var(--blue) 0 rgba(39,13,201,var(--a));
+  text-shadow: var(--blue) 0 rgba(43,107,217,var(--a));
   animation: glitch-2 4.3s ease infinite alternate-reverse;
 }
 
